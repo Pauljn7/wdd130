@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Experience the best rafting adventures with us!">
+    <meta name="author" content="Paul Uagbale">
+    <title>White Water Rafting</title>
+
+    <!-- Link to Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Open+Sans:wght@300;400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Inline CSS -->
+    <style>
+        /* Define color scheme and fonts */
+        :root {
+            --primary-color: #1E88E5;
+            --secondary-color: #FFC107;
+            --accent-color: #43A047;
+            --background-color: #F5F5F5;
+        }
+
+        /* Basic page styling */
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: var(--background-color);
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header styling */
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header img {
+            width: 150px;
+            margin-bottom: 10px;
+        }
+
+        /* Navigation styling */
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Hero styling */
+        .hero {
+            position: relative;
+            background-image: url('images/hero-image.jpg');
+            background-size: cover;
+            height: 400px;
+            color: white;
+            text-align: center;
+        }
+
+        .hero h1 {
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .hero article {
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, 0);
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+        }
+
+        .hero article img {
+            float: right;
+            margin-left: 15px;
+            width: 100px;
+            height: auto;
+        }
+
+        /* Section styling */
+        section {
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .gallery img {
+            width: 100%;
+            max-width: 200px;
+            margin: 5px;
+            border-radius: 5px;
+        }
+
+        /* Footer styling */
+        footer {
+            text-align: center;
+            background-color: var(--secondary-color);
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        .social-links a {
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .social-links img {
+            width: 30px;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="images/logo.png" alt="Rafting Site Logo">
+        <h1>About Us</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero">
+            <h1>White Water Rafting</h1>
+            <article>
+                <img src="images/rafting.jpg" alt="Rafting Adventure">
+                <p>Get ready for the adventure of a lifetime with our white-water rafting tours!</p>
+            </article>
+        </div>
+
+        <section>
+            <h2>History</h2>
+            <p>Our company started in 1998 with a mission to offer exciting and safe rafting experiences for everyone.
+                Over the years, we have expanded our routes and continue to provide unforgettable adventures!</p>
+        </section>
+
+        <section>
+            <h2>Adventure Awaits You</h2>
+            <div class="gallery">
+                <img src="images/adventure1.jpg" alt="Rafting Adventure 1">
+                <img src="images/adventure2.jpg" alt="Rafting Adventure 2">
+                <img src="images/adventure3.jpg" alt="Rafting Adventure 3">
+                <img src="images/adventure4.jpg" alt="Rafting Adventure 4">
+                <img src="images/adventure5.jpg" alt="Rafting Adventure 5">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 White Water Rafting | Designed by Paul Uagbale</p>
+        <div class="social-links">
+            <a href="https://facebook.com" target="_blank"><img src="images/facebook-icon.png" alt="Facebook"></a>
+            <a href="https://X.com" target="_blank"><img src="images/X-icon.png" alt="Twitter"></a>
+            <a href="https://instagram.com" target="_blank"><img src="images/instagram-icon.png" alt="Instagram"></a>
+        </div>
+    </footer>
+
+</body>
+
+</html>
