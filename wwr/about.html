@@ -1,210 +1,54 @@
 <!DOCTYPE html>
 <html lang="en-US">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description"
-        content="Get to know the story behind White Water Rafting Co and meet the team that makes the adventure happen." />
-    <meta name="author" content="Paul Uagbale Jnr" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us | White Water Rafting Co</title>
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            background-color: #ffffff;
-            color: #333;
-        }
-
-        header {
-            display: grid;
-            grid-template-columns: auto 1fr;
-            align-items: center;
-            background-color: #1e90ff;
-            color: white;
-            padding: 1rem 2rem;
-        }
-
-        header img {
-            height: 50px;
-        }
-
-        nav {
-            display: flex;
-            justify-content: flex-end;
-        }
-
-        nav a {
-            color: white;
-            margin-left: 1.5rem;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        nav a:hover,
-        nav a.active {
-            text-decoration: underline;
-        }
-
-        .hero {
-            position: relative;
-            text-align: center;
-            color: white;
-        }
-
-        .hero img {
-            width: 100%;
-            height: 300px;
-            object-fit: cover;
-        }
-
-        .hero h1 {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background-color: rgba(30, 144, 255, 0.75);
-            padding: 1rem 2rem;
-            border-radius: 10px;
-            font-size: 2rem;
-        }
-
-        .company-info {
-            padding: 2rem;
-            background-color: #ffffff;
-        }
-
-        .company-info h2 {
-            color: #1e90ff;
-            margin-bottom: 0.5rem;
-        }
-
-        .company-info p {
-            margin-bottom: 1.5rem;
-            font-size: 1.05rem;
-        }
-
-        .adventure-images {
-            background-color: #f0f8ff;
-            padding: 2rem;
-            text-align: center;
-        }
-
-        .adventure-images h2 {
-            color: #1e90ff;
-            margin-bottom: 1rem;
-        }
-
-        .image-group {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 1.5rem;
-        }
-
-        figure {
-            width: 300px;
-        }
-
-        figure img {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
-            border: 2px solid #1e90ff;
-        }
-
-        figcaption {
-            margin-top: 0.5rem;
-            font-style: italic;
-            color: #333;
-        }
-
-        footer {
-            background-color: #1e90ff;
-            color: white;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1rem 2rem;
-            margin-top: 2rem;
-        }
-
-        footer .socials {
-            display: flex;
-            gap: 1rem;
-        }
-
-        footer img {
-            height: 24px;
-            vertical-align: middle;
-        }
-    </style>
+    <meta name="description" content="Get to know the story behind White Water Rafting Co and meet the team that makes the adventure happen.">
+    <meta name="author" content="Paul Uagbale Jnr">
+    <link rel="stylesheet" href="styles/rafting.css">
 </head>
-
 <body>
-    <header>
-        <img src="images/logo.png" alt="White Water Rafting Co Logo" />
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html" class="active">About Us</a>
-            <a href="trips.html">Trips</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
 
-    <main>
-        <section class="hero">
-            <img src="images/adventure4.jpg" alt="Adventurers rafting down wild river rapids" />
-            <h1>Welcome to White Water Rafting Co</h1>
-        </section>
+<header>
+    <img src="images/logo.png" alt="White Water Rafting Co Logo">
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="trips.html">Trips</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+</header>
 
-        <section class="company-info">
-            <h2>Who We Are</h2>
-            <p>
-                We’re a passionate group of adventurers who live for the rush of the rapids and the peace of nature.
-                Since 2010, we’ve been guiding guests through unforgettable river adventures.
-            </p>
+<main>
+    <div class="hero">
+        <img src="images/adventure4.jpg" alt="Adventurers rafting down wild river rapids">
+        <h1>Welcome to White Water Rafting Co</h1>
+        <article>
+            <img src="images/adventure3.jpg" alt="Calm stretch of river with mountains">
+            <p>Our mission is to bring adventure and connection through the thrill of white water rafting.</p>
+        </article>
+    </div>
 
-            <h2>Why We Do It</h2>
-            <p>
-                For us, rafting is more than a thrill—it’s a way to connect, explore, and recharge. Every trip is an
-                opportunity to share our love for the river and create lasting memories.
-            </p>
-        </section>
+    <section>
+        <h2>History</h2>
+        <p>Founded in 2005, White Water Rafting Co has been providing unforgettable river adventures with professional guides and safety-first experiences.</p>
+    </section>
 
-        <section class="adventure-images">
-            <h2>Adventure Highlights</h2>
-            <div class="image-group">
-                <figure>
-                    <img src="images/adventure1.jpg" alt="Raft team paddling through rapids" />
-                    <figcaption>Raft Team Paddling</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/adventure2.jpg" alt="Guide helping guests suit up" />
-                    <figcaption>Moments</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/adventure3.jpg" alt="Calm stretch of river with mountains" />
-                    <figcaption>Moments of Calm</figcaption>
-                </figure>
-            </div>
-        </section>
-    </main>
+    <section>
+        <h2>Adventure Awaits You!</h2>
+        <p>Join us and create memories that will last a lifetime.</p>
+    </section>
+</main>
 
-    <footer>
-        <p>© 2025 White Water Rafting Co | Designed by Paul Uagbale Jnr</p>
-        <div class="socials">
-            <a href="#"><img src="images/facebook-icon.png" alt="Facebook" /></a>
-            <a href="#"><img src="images/instagram-icon.png" alt="Instagram" /></a>
-            <a href="#"><img src="images/x-icon.png" alt="Twitter" /></a>
-        </div>
-    </footer>
+<footer>
+    <p>© 2025 White Water Rafting Co | Paul Uagbale Jnr</p>
+    <nav class="socialmedia">
+        <a href="https://facebook.com" target="_blank"><img src="images/facebook-icon.png" alt="Facebook"></a>
+        <a href="https://instagram.com" target="_blank"><img src="images/instagram-icon.png" alt="Instagram"></a>
+        <a href="https://twitter.com" target="_blank"><img src="images/x-icon.png" alt="Twitter"></a>
+    </nav>
+</footer>
+
 </body>
-
 </html>
