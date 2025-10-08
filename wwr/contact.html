@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>White Water Rafting | About Us</title>
-  <meta name="description" content="Learn about our White Water Rafting company, our history, and the thrilling adventures we offer on the river.">
+  <title>White Water Rafting | Contact Us</title>
+  <meta name="description" content="Get in touch with White Water Rafting Adventures. Contact us for reservations, general inquiries, or feedback.">
   <meta name="author" content="Paul Uagbale">
   <link rel="stylesheet" href="styles/rafting.css">
 </head>
@@ -16,46 +16,77 @@
       <a href="index.html">Home</a>
       <a href="about.html">About Us</a>
       <a href="#">Trips</a>
-      <a href="#">Contact Us</a>
+      <a href="contact.html">Contact Us</a>
     </nav>
   </header>
 
   <main>
-    <h1>About White Water Rafting Adventures</h1>
+    <h1>Contact White Water Rafting Adventures</h1>
 
-    <section class="hero">
-      <img src="images/hero.jpg" alt="Rafting Hero Image">
-      <h2>Experience the Thrill of the Rapids</h2>
+    <section class="contact-info">
+      <h2>Get in Touch</h2>
+      <p>We’d love to hear from you! Whether you have a question about trips, group bookings, or safety policies, our team is ready to help.</p>
+
+      <ul>
+        <li><strong>Address:</strong> 123 River Rapids Road, Adventure City</li>
+        <li><strong>Phone:</strong> +1 (800) 555-RAFT</li>
+        <li><strong>Email:</strong> contact@raftingadventures.com</li>
+      </ul>
     </section>
 
-    <section class="history">
-      <h2>Our History</h2>
-      <p>White Water Rafting Adventures began with a group of river enthusiasts who loved exploring the wild and untamed rivers of our region. Over the years, we have grown into a professional rafting company offering unforgettable experiences to thrill-seekers and nature lovers alike.</p>
-      <img src="images/history.jpg" alt="Rafting History">
+    <section class="map">
+      <h2>Our Location</h2>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509265!2d144.95373531531883!3d-37.8162793797517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43f3d1a7d5%3A0x2a2f6f2c1e5555f1!2sAdventure%20Park!5e0!3m2!1sen!2sus!4v1695044837000!5m2!1sen!2sus"
+        width="600"
+        height="450"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
     </section>
 
-    <section class="adventures">
-      <h2>Our Adventure Awaits</h2>
-      <figure>
-        <img src="images/adventure1.jpg" alt="River Rapids">
-        <figcaption>Fast-flowing river rapids for thrill-seekers</figcaption>
-      </figure>
-      <figure>
-        <img src="images/adventure2.jpg" alt="Team Rafting">
-        <figcaption>Teamwork makes the adventure even better</figcaption>
-      </figure>
-      <figure>
-        <img src="images/adventure3.jpg" alt="Calm Waters">
-        <figcaption>Rafting experience</figcaption>
-      </figure>
-      <figure>
-        <img src="images/adventure4.jpg" alt="Family Fun">
-        <figcaption>Rafting experience</figcaption>
-      </figure>
-      <figure>
-        <img src="images/adventure5.jpg" alt="Mountain View">
-        <figcaption>Breathtaking Moment</figcaption>
-      </figure>
+    <section class="employees">
+      <h2>Meet Our Team</h2>
+      <div class="employee-gallery">
+        <figure>
+          <img src="images/employee1.jpg" alt="Team guide smiling">
+          <figcaption>John Rivers – Lead Raft Guide</figcaption>
+        </figure>
+        <figure>
+          <img src="images/employee2.jpg" alt="Rafting instructor">
+          <figcaption>Sarah Brooks – Safety Instructor</figcaption>
+        </figure>
+        <figure>
+          <img src="images/employee3.jpg" alt="Office staff member">
+          <figcaption>Mark Hill – Reservations Manager</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="contact-form">
+      <h2>Send Us a Message</h2>
+      <form>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <fieldset>
+          <legend>Purpose of Message:</legend>
+          <label><input type="radio" name="purpose" value="general" required> General Inquiry</label>
+          <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
+          <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
+        </fieldset>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <label><input type="checkbox" name="subscribe"> Please subscribe me to the monthly newsletter</label>
+
+        <button type="submit">Send Message</button>
+      </form>
     </section>
   </main>
 
