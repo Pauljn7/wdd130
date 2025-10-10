@@ -3,96 +3,86 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>White Water Rafting | Contact Us</title>
-  <meta name="description" content="Get in touch with White Water Rafting Adventures. Contact us for reservations, general inquiries, or feedback.">
+  <meta name="description" content="Contact White Water Rafting Adventures for questions, bookings, or customer support. We'd love to hear from you!">
   <meta name="author" content="Paul Uagbale">
-  <link rel="stylesheet" href="styles/rafting.css">
+  <title>Contact Us | White Water Rafting Adventures</title>
+  <link rel="stylesheet" href="rafting.css">
 </head>
-
 <body>
   <header>
     <img src="images/logo.png" alt="Rafting Site Logo">
     <nav>
       <a href="index.html">Home</a>
       <a href="about.html">About Us</a>
-      <a href="#">Trips</a>
-      <a href="contact.html">Contact Us</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </header>
 
   <main>
-    <h1>Contact White Water Rafting Adventures</h1>
-
     <section class="contact-info">
-      <h2>Get in Touch</h2>
-      <p>We’d love to hear from you! Whether you have a question about trips, group bookings, or safety policies, our team is ready to help.</p>
-
-      <ul>
-        <li><strong>Address:</strong> 123 River Rapids Road, Adventure City</li>
-        <li><strong>Phone:</strong> +1 (800) 555-RAFT</li>
-        <li><strong>Email:</strong> contact@raftingadventures.com</li>
-      </ul>
+      <h1>Contact White Water Rafting Adventures</h1>
+      <p>We’d love to hear from you! Reach us through any of the options below.</p>
+      <p><strong>Address:</strong> 123 River Rapids Road, Adventure City, ID 83440</p>
+      <p><strong>Phone:</strong> +1 (208) 555-1234</p>
+      <p><strong>Email:</strong> info@wwr.com</p>
     </section>
 
     <section class="map">
-      <h2>Our Location</h2>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509265!2d144.95373531531883!3d-37.8162793797517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43f3d1a7d5%3A0x2a2f6f2c1e5555f1!2sAdventure%20Park!5e0!3m2!1sen!2sus!4v1695044837000!5m2!1sen!2sus"
-        width="600"
-        height="450"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
-    </section>
-
-    <section class="employees">
-      <h2>Meet Our Team</h2>
-      <div class="employee-gallery">
-        <figure>
-          <img src="images/employee1.jpg" alt="Team guide smiling">
-          <figcaption>John Rivers – Lead Raft Guide</figcaption>
-        </figure>
-        <figure>
-          <img src="images/employee2.jpg" alt="Rafting instructor">
-          <figcaption>Sarah Brooks – Safety Instructor</figcaption>
-        </figure>
-        <figure>
-          <img src="images/employee3.jpg" alt="Office staff member">
-          <figcaption>Mark Hill – Reservations Manager</figcaption>
-        </figure>
-      </div>
+      <h2>Find Us</h2>
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509374!2d144.95373631590442!3d-37.81627974202196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43f25c9a9f%3A0x5045675218ceed30!2sWhite%20Water%20Rafting!5e0!3m2!1sen!2sus!4v1634154984849!5m2!1sen!2sus" 
+        width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </section>
 
     <section class="contact-form">
       <h2>Send Us a Message</h2>
       <form>
-        <label for="name">Full Name:</label>
-        <input type="text" id="name" name="name" required>
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required>
 
-        <label for="email">Email Address:</label>
+        <label for="email">Email:</label>
         <input type="email" id="email" name="email" required>
 
-        <fieldset>
-          <legend>Purpose of Message:</legend>
-          <label><input type="radio" name="purpose" value="general" required> General Inquiry</label>
-          <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
-          <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
-        </fieldset>
+        <label for="purpose">Message Purpose:</label>
+        <select id="purpose" name="purpose" required>
+          <option value="">-- Select One --</option>
+          <option value="booking">Booking Inquiry</option>
+          <option value="feedback">Feedback</option>
+          <option value="general">General Question</option>
+        </select>
 
-        <label for="message">Message:</label>
+        <label for="message">Your Message:</label>
         <textarea id="message" name="message" rows="5" required></textarea>
 
-        <label><input type="checkbox" name="subscribe"> Please subscribe me to the monthly newsletter</label>
+        <label>
+          <input type="checkbox" id="newsletter" name="newsletter">
+          Sign me up for the monthly newsletter
+        </label>
 
         <button type="submit">Send Message</button>
       </form>
     </section>
+
+    <section class="employees">
+      <h2>Meet Our Team</h2>
+      <figure>
+        <img src="images/employee1.jpg" alt="Rafting Guide 1">
+        <figcaption>John - Senior River Guide</figcaption>
+      </figure>
+      <figure>
+        <img src="images/employee2.jpg" alt="Rafting Guide 2">
+        <figcaption>Sarah - Adventure Coordinator</figcaption>
+      </figure>
+      <figure>
+        <img src="images/employee3.jpg" alt="Rafting Guide 3">
+        <figcaption>Mike - Safety Officer</figcaption>
+      </figure>
+    </section>
   </main>
 
   <footer>
-    <p>©2025 White Water Rafting Adventures | Paul Uagbale</p>
-    <div class="socials">
+    <p>© 2025 White Water Rafting Adventures | Designed by Paul Uagbale</p>
+    <div class="social">
       <a href="#"><img src="images/facebook.png" alt="Visit us on Facebook"></a>
       <a href="#"><img src="images/twitter.png" alt="Follow us on Twitter"></a>
       <a href="#"><img src="images/instagram.png" alt="Check our Instagram"></a>
