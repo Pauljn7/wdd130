@@ -5,16 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Contact White Water Rafting Adventures. Reach out to us for questions, bookings, or feedback about your next rafting experience.">
   <meta name="author" content="Paul Uagbale">
-  <title>White Water Rafting Adventures | Contact Us</title>
+  <title>White Water Rafting | Contact Us</title>
   <link rel="stylesheet" href="styles/rafting.css">
 </head>
-
 <body>
   <header>
-    <img src="images/logo.png" alt="Rafting Site Logo">
+    <img src="images/logo.png" alt="Rafting Site Logo" class="logo">
     <nav>
       <a href="index.html">Home</a>
       <a href="about.html">About Us</a>
+      <a href="trips.html">Trips</a>
       <a href="contact.html">Contact Us</a>
     </nav>
   </header>
@@ -23,73 +23,71 @@
     <h1>Contact White Water Rafting Adventures</h1>
 
     <section class="company-info">
-      <h2>Our Information</h2>
-      <p>Address: 123 Rapids Way, Riverbend, Colorado 80401</p>
-      <p>Phone: +1 (970) 555-1212</p>
-      <p>Email: contact@whitewaterrafting.com</p>
+      <h2>Our Location</h2>
+      <p>
+        White Water Rafting Adventures<br>
+        123 River Rapids Road<br>
+        Adventure City, CO 80439<br>
+        Phone: (555) 123-4567<br>
+        Email: info@wwr.com
+      </p>
+
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3105.0032810722574!2d-106.82865108464793!3d39.1910989795287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876aa59c9a2b2a7f%3A0x9f42d0de1b38f0a!2sColorado%20River!5e0!3m2!1sen!2sus!4v1616179415344!5m2!1sen!2sus"
+          width="400" height="300" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
     </section>
 
-    <section class="map">
-      <h2>Find Us Here</h2>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3105.0032810722574!2d-106.82865108464793!3d39.1910989795287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876aa59c9a2b2a7f%3A0x9f42d0de1b38f0a!2sColorado%20River!5e0!3m2!1sen!2sus!4v1616179415344!5m2!1sen!2sus"
-        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <section class="employees">
+      <h2>Meet Our Team</h2>
+      <div class="employee">
+        <img src="images/employee1.jpg" alt="Photo of Emily, Lead Guide">
+        <p><strong>Emily Waters</strong><br>Lead Guide</p>
+      </div>
+      <div class="employee">
+        <img src="images/employee2.jpg" alt="Photo of Jake, Safety Coordinator">
+        <p><strong>Jake Rivers</strong><br>Safety Coordinator</p>
+      </div>
+      <div class="employee">
+        <img src="images/employee3.jpg" alt="Photo of Sarah, Customer Relations">
+        <p><strong>Sarah Brooks</strong><br>Customer Relations</p>
+      </div>
     </section>
 
     <section class="contact-form">
       <h2>Send Us a Message</h2>
-      <form action="#" method="post">
+      <form>
         <label for="fullname">Full Name:</label>
         <input type="text" id="fullname" name="fullname" required>
 
         <label for="email">Email Address:</label>
         <input type="email" id="email" name="email" required>
 
-        <label for="purpose">Purpose of Message:</label><br>
-        <input type="radio" id="general" name="purpose" value="general">
-        <label for="general">General Inquiry</label><br>
-        <input type="radio" id="booking" name="purpose" value="booking">
-        <label for="booking">Booking Question</label><br>
-        <input type="radio" id="feedback" name="purpose" value="feedback">
-        <label for="feedback">Website Feedback</label><br>
+        <fieldset>
+          <legend>Purpose of Message:</legend>
+          <label><input type="radio" name="purpose" value="general"> General Inquiry</label>
+          <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
+          <label><input type="radio" name="purpose" value="website"> Website Suggestion</label>
+        </fieldset>
 
         <label for="message">Your Message:</label>
         <textarea id="message" name="message" rows="5" required></textarea>
 
         <label>
-          <input type="checkbox" id="subscribe" name="subscribe">
-          Subscribe to our monthly newsletter
+          <input type="checkbox" name="subscribe" id="subscribe">
+          Please subscribe me to the monthly newsletter.
         </label>
 
         <button type="submit">Send Message</button>
       </form>
     </section>
-
-    <section class="employees">
-      <h2>Meet Our Team</h2>
-      <figure>
-        <img src="images/employee1.jpg" alt="Guide John at the river">
-        <figcaption>John – Senior Rafting Guide</figcaption>
-      </figure>
-      <figure>
-        <img src="images/employee2.jpg" alt="Instructor Lisa guiding clients">
-        <figcaption>Lisa – Safety Instructor</figcaption>
-      </figure>
-      <figure>
-        <img src="images/employee3.jpg" alt="Coordinator Mike at office">
-        <figcaption>Mike – Tour Coordinator</figcaption>
-      </figure>
-    </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 White Water Rafting Adventures | Designed by Paul Uagbale</p>
-    <nav>
-      <a href="index.html">Home</a> |
-      <a href="about.html">About</a> |
-      <a href="contact.html">Contact</a>
-    </nav>
+    <p>©2025 White Water Rafting Adventures | Paul Uagbale</p>
+    <a href="https://Pauljn7.github.io/wdd130/wwr/images/contact-wireframe.png" target="_blank">Wireframe</a>
   </footer>
 </body>
 </html>
