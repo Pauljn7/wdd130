@@ -3,104 +3,95 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>White Water Rafting | Contact Us</title>
-  <meta name="description" content="Contact White Water Rafting Adventures. Reach out to us for questions, bookings, or feedback about your next rafting experience.">
-  <meta name="author" content="Paul Uagbale">
+  <meta name="description" content="Contact White Water Rafting Adventures for trip information, group bookings, and inquiries.">
+  <meta name="author" content="Paul Uagbale Jnr">
+  <title>Contact Us | White Water Rafting</title>
   <link rel="stylesheet" href="styles/rafting.css">
 </head>
+
 <body>
   <header>
-    <img src="images/logo.png" alt="Rafting Site Logo">
+    <img src="images/logo.png" alt="White Water Rafting Logo">
     <nav>
       <a href="index.html">Home</a>
       <a href="about.html">About Us</a>
       <a href="trips.html">Trips</a>
-      <a href="contact.html">Contact Us</a>
+      <a href="contact.html" class="active">Contact</a>
     </nav>
   </header>
 
   <main>
-    <h1>Contact White Water Rafting Adventures</h1>
-
-    <section class="company-info">
-      <h2>Our Office</h2>
-      <p>Email: info@whitewaterrafting.com</p>
-      <p>Phone: +1 (555) 123-4567</p>
-      <p>Address: 123 River Adventure Lane, Rapids City, USA</p>
-
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.086082513503!2d-122.41941558468132!3d37.77492927975945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808b9a7d9e01%3A0x9c1aaf2382e74b4c!2sRafting%20Adventures!5e0!3m2!1sen!2sus!4v1616161616161"
-        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
-      </iframe>
+    <section class="hero">
+      <img src="images/hero.jpg" alt="Rafting adventure hero image">
+      <h1>Contact White Water Rafting Adventures</h1>
+      <p>We’re here to help you plan your next river adventure! Reach out today and let’s make it unforgettable.</p>
     </section>
 
+    <!-- Company Info -->
+    <section class="contact-info">
+      <h2>Our Information</h2>
+      <ul>
+        <li><strong>Address:</strong> 123 River Road, Rapids City, Idaho, USA</li>
+        <li><strong>Phone:</strong> +1 (208) 555-7890</li>
+        <li><strong>Email:</strong> info@whitewaterrafting.com</li>
+        <li><strong>Hours:</strong> Mon–Sat: 8 AM – 6 PM</li>
+      </ul>
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25177.38274372921!2d-116.2040045!3d43.6137399!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54aeff84baf77777%3A0xa3b3f06dd1b2bdf5!2sBoise%2C%20ID!5e0!3m2!1sen!2sus!4v1700000000000"
+          width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+      </div>
+    </section>
+
+    <!-- Employee Section -->
     <section class="employees">
       <h2>Meet Our Team</h2>
-      <figure>
-        <img src="images/employee1.jpg" alt="Photo of Emily, Lead Guide">
-        <figcaption>Emily – Lead Guide</figcaption>
-      </figure>
-      <figure>
-        <img src="images/employee2.jpg" alt="Photo of Jake, Safety Coordinator">
-        <figcaption>Jake – Safety Coordinator</figcaption>
-      </figure>
-      <figure>
-        <img src="images/employee3.jpg" alt="Photo of Sarah, Customer Relations">
-        <figcaption>Sarah – Customer Relations</figcaption>
-      </figure>
+      <div class="grid">
+        <figure>
+          <img src="images/employee1.jpg" alt="Rafting guide John">
+          <figcaption>John – Head Guide</figcaption>
+        </figure>
+        <figure>
+          <img src="images/employee2.jpg" alt="Customer service Susan">
+          <figcaption>Susan – Customer Relations</figcaption>
+        </figure>
+        <figure>
+          <img src="images/employee3.jpg" alt="Trip planner Mike">
+          <figcaption>Mike – Trip Coordinator</figcaption>
+        </figure>
+      </div>
     </section>
 
+    <!-- Contact Form -->
     <section class="contact-form">
       <h2>Send Us a Message</h2>
+      <p>We’ll get back to you within 24 hours. Please fill out the form below:</p>
+
       <form>
-        <label for="fullname">Full Name:</label>
-        <input type="text" id="fullname" name="fullname" required>
-
-        <label for="email">Email Address:</label>
-        <input type="email" id="email" name="email" required>
-
         <fieldset>
-          <legend>Purpose of Message:</legend>
-          <label for="purpose1">
-            <input type="radio" id="purpose1" name="purpose" value="general">
-            General Inquiry
-          </label>
-          <label for="purpose2">
-            <input type="radio" id="purpose2" name="purpose" value="reservation">
-            Reservation Question
-          </label>
-          <label for="purpose3">
-            <input type="radio" id="purpose3" name="purpose" value="website">
-            Website Suggestion
-          </label>
+          <legend>Contact Information</legend>
+
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit">Send Message</button>
         </fieldset>
-
-        <label for="message">Your Message:</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-
-        <label for="subscribe">
-          <input type="checkbox" id="subscribe" name="subscribe">
-          Please subscribe me to the monthly newsletter.
-        </label>
-
-        <button type="submit">Send Message</button>
       </form>
-    </section>
-
-    <section class="extra-gallery">
-      <h2>Rafting Adventures Gallery</h2>
-      <img src="images/rafting1.jpg" alt="Rafting team paddling through rapids">
-      <img src="images/rafting2.jpg" alt="Raft boat navigating whitewater">
-      <img src="images/rafting3.jpg" alt="Group enjoying river rafting adventure">
     </section>
   </main>
 
   <footer>
-    <p>©2024 White Water Rafting Adventures | Created by Paul Uagbale</p>
-    <nav class="social-links">
-      <a href="#"><img src="images/facebook.png" alt="Facebook icon"></a>
-      <a href="#"><img src="images/twitter.png" alt="Twitter icon"></a>
-      <a href="#"><img src="images/instagram.png" alt="Instagram icon"></a>
+    <p>©️ 2025 White Water Rafting | Designed by Paul Uagbale Jnr</p>
+    <nav class="sociallinks">
+      <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+      <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
     </nav>
   </footer>
 </body>
