@@ -1,130 +1,107 @@
 <!DOCTYPE html>
 <html lang="en-US">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Paul Uagbale Jnr | WDD 130 - Personal Home Page showcasing web development skills.">
-    <meta name="author" content="Paul Uagbale Jnr">
-    <title>Paul Uagbale Jnr | WDD 130</title>
-    <style>
-        /* General Styles */
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-
-        /* Navigation */
-        nav {
-            background-color: #333;
-            padding: 10px;
-            text-align: center;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        /* Main Content */
-        main {
-            width: 80%;
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-
-        main img {
-            width: 150px;
-            height: auto;
-            border-radius: 50%;
-            margin-top: 10px;
-        }
-
-        /* Aside Section */
-        aside {
-            width: 80%;
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 15px;
-            background-color: #e6f7ff;
-            border: 1px solid #b3d9ff;
-            border-radius: 8px;
-            text-align: center;
-            color: #333;
-        }
-
-        aside img {
-            width: 200px;
-            height: auto;
-            border-radius: 8px;
-        }
-
-        /* Paragraphs */
-        p {
-            padding: 0;
-            margin: 10px 0;
-        }
-
-        /* Footer */
-        footer {
-            margin-top: 20px;
-            padding: 10px;
-            border-top: 2px solid #ccc;
-            text-align: center;
-            background-color: #f8f8f8;
-            font-size: 0.9em;
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="River Rush Rafting offers thrilling white water rafting adventures for families and groups. Explore our adventures, meet our team, and book your next trip today!">
+  <meta name="author" content="Paul Uagbale Jnr">
+  <title>River Rush Rafting | Home</title>
+  <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">About Me</a>
-            <a href="#">Contact</a>
-        </nav>
-    </header>
+  <header>
+    <img src="images/logo.png" alt="River Rush Rafting Logo" class="logo">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="trips.html">Trips</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
 
-    <main>
-        <h1>Paul Uagbale Jnr | WDD 130</h1>
-        <img src="images/profile.jpg" alt="Paul Uagbale Jnr's Profile Picture">
-        <p>
-            Hello! My name is Paul Uagbale Jnr, and I am from Lagos, Nigeria. I love learning about web development,
-            technology, and cryptocurrency. I am also passionate about digital marketing, community management, and
-            financial growth through blockchain opportunities. Recently, I successfully organized a crypto webinar and
-            secured a community manager role. Excited to keep learning and growing!
-        </p>
-    </main>
+  <main>
+      
+    <section class="hero">
+      <img src="images/hero.jpg" alt="Rafting adventure on a river" class="hero-image">
+      <h1 class="hero-heading">Make Memories on the Rapids!</h1>
+    </section>
 
-    <aside>
-        <h2>About Nigeria</h2>
-        <img src="images/nigeria.jpg" alt="Scenic view of Nigeria">
-        <p>
-            Nigeria is a vibrant country in West Africa known for its rich culture, diverse languages, and booming
-            economy.
-            It is home to over 200 million people and is famous for its Nollywood film industry, delicious cuisine, and
-            beautiful landscapes.
-        </p>
-    </aside>
+    <section class="newsletter">
+      <h2>Join Our Adventure Newsletter</h2>
+      <p>Stay updated with our latest trips, special offers, and rafting tips.</p>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
 
-    <footer>
-        <p>©️ 2025 🌴 Paul Uagbale Jnr 🌴 Nigeria</p>
-    </footer>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <button type="submit">Sign Me Up!</button>
+      </form>
+    </section>
+
+    <section class="cta">
+      <h2>Ready for an Adventure?</h2>
+      <p>Discover exciting rafting trips for all skill levels.</p>
+      <a href="trips.html" class="btn">View Trips</a>
+    </section>
+
+    <section class="grid-content">
+      <h2>Our Adventures</h2>
+      <div class="grid">
+        <div class="grid-item">
+          <img src="images/adventure1.jpg" alt="Rafting adventure 1">
+          <h3>Family Rapids</h3>
+          <p>Perfect for beginners and families who want fun without extreme rapids.</p>
+        </div>
+        <div class="grid-item">
+          <img src="images/adventure2.jpg" alt="Rafting adventure 2">
+          <h3>Wild River Run</h3>
+          <p>Take on challenging rapids and enjoy the thrill of the river’s power.</p>
+        </div>
+        <div class="grid-item">
+          <img src="images/adventure3.jpg" alt="Rafting adventure 3">
+          <h3>Sunset Float</h3>
+          <p>Relax on a gentle evening ride surrounded by golden views.</p>
+        </div>
+        <div class="grid-item">
+          <img src="images/adventure4.jpg" alt="Rafting adventure 4">
+          <h3>Extreme Challenge</h3>
+          <p>For the experienced and brave, this is our most daring adventure!</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Meet Our Team Section -->
+    <section class="team">
+      <h2>Meet Our Guides</h2>
+      <div class="grid">
+        <div class="grid-item">
+          <img src="images/employee1.jpg" alt="Rafting guide 1">
+          <h3>James</h3>
+          <p>Expert guide with over 10 years of river experience.</p>
+        </div>
+        <div class="grid-item">
+          <img src="images/employee2.jpg" alt="Rafting guide 2">
+          <h3>Sarah</h3>
+          <p>Certified rafting instructor passionate about safety and fun.</p>
+        </div>
+        <div class="grid-item">
+          <img src="images/employee3.jpg" alt="Rafting guide 3">
+          <h3>Mike</h3>
+          <p>Adventure lover who ensures every trip is unforgettable.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>©️ 2025 River Rush Rafting | Designed by Paul Uagbale Jnr | WDD 130</p>
+    <nav class="social">
+      <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+      <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+    </nav>
+  </footer>
 </body>
-
 </html>
